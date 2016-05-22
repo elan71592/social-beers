@@ -1,0 +1,223 @@
+/*#yield-container {
+  width: 70%;
+  margin: auto;
+}*/
+
+body {
+  /*background-image: url('../imgs/bg.jpg');
+  background-size: cover;
+  height: 100%;*/
+  /*background-color: rgba(38, 83, 127, .15);*/
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1), rgba(54, 109, 144,.85)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, rgba(255, 255, 255, 1), rgba(54, 109, 144,.85)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, rgba(255, 255, 255, 1), rgba(54, 109, 144,.85)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(54, 109, 144,.85));
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: #F07017;
+  font-size: 3em;
+  margin-left: 6em;
+}
+
+.user-lr {
+  float: right;
+  margin-top: -5em;
+  margin-right: 5em;
+}
+
+.user-lr a {
+  text-decoration: none;
+  color: #F07017;
+  font-size: 1.25em;
+  padding: .5em 2em .5em 2em;
+  border: 1px solid #F07017;
+  border-radius: 20px;
+  background-color: white;
+  display: inline-block;
+  margin-left: 2em;
+}
+
+.user-lr a:hover {
+  background-color: #F07017;
+  color: white;
+  transition: border 0.5s ease;
+  transition: background-color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+a.logout-button {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  border: 1px solid #fff;
+  padding: 5px 35px;
+  border-radius: 15px;
+  margin-left: 32%;
+  margin-right: 21%;
+  display: block;
+  margin-top: -20px
+}
+
+a.logout-button:hover {
+  background-color: #F07017;
+  transition: background-color 0.5s ease;
+}
+
+#search-home {
+  width: 600px;
+  height: 300px;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 8em;
+  text-align: center;
+}
+
+div#greeting {
+  margin-top: 4em;
+  font-family: 'Montserrat', sans-serif;
+  color: #366D90;
+}
+
+div#greeting p:first-child {
+  font-size: 1.7em;
+}
+
+div#greeting p:nth-child(2) {
+  font-size: 1em;
+}
+
+div#search-container {
+  padding-top: 80px;
+}
+
+form {
+  margin-left: 105px;
+}
+
+form input.search-string {
+  display: block;
+  width: 400px;
+  height: 70px;
+  border: 1px solid #366D90;
+  font-size: 22px;
+  font-weight: bold;
+  color: #366D90;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form input.search-string::-webkit-input-placeholder {
+   color: #F07017;
+}
+
+form input.search-string:-moz-placeholder { /* Firefox 18- */
+   color: #F07017;
+}
+
+form input.search-string::-moz-placeholder {  /* Firefox 19+ */
+   color: #F07017;
+}
+
+form input.search-string:-ms-input-placeholder {
+   color: #F07017;
+}
+
+
+form input.search-submit-button {
+  display: block;
+  width: 407px;
+  height: 50px;
+  background: none;
+  border: 1px solid #366D90;
+  border-radius: 10px;
+  background-color: white;
+  color: #F07017;
+}
+
+form input.search-submit-button:hover {
+  background-color: #366D90;
+  color: white;
+  transition: background-color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+div#results-container {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+table#breweries {
+  display: none;
+  margin-left: -600px;
+  /*background-color: #ccc;*/
+  height: 700px;
+  margin-top: 120px;
+  width: 600px;
+  background-color: rgba(255,255,255, .25);
+  border-top-right-radius: 10px;
+}
+
+table#breweries tr {
+  font-size: 1em;
+  /*font-weight: bold;*/
+  font-family: 'Montserrat', sans-serif;
+  color: #366D90;
+  border-bottom: 1px solid #F07017;
+  /*text-shadow: .5px .5px #000;*/
+}
+
+table#breweries tr a {
+  text-decoration: none;
+  color: #366D90;
+}
+
+table#breweries tr a:hover {
+  color: #F07017;
+  transition: color 0.5s ease;
+
+}
+
+table#breweries tr td.block {
+  display: inline-block;
+  padding-top: 2em;
+  padding-bottom: .5em;
+  padding-left: 1em;
+}
+
+.location-td {
+  font-family: 'Montserrat', sans-serif;
+  /*display: inline-block;*/
+  /*margin-bottom: 10px;*/
+  font-size: .75em;
+  margin-top: .5em;
+  margin-right: 6em;
+  float: right;
+}
+
+.view-tweets {
+  font-family: 'Montserrat', sans-serif;
+  float: right;
+  padding-right: 1em;
+  padding-top: .5em;
+  font-size: .75em;
+}
+
+#tweets-container {
+  float: right;
+  margin-top: -20em;
+  margin-right: 3em;
+}
+
+div.corner-li {
+  font-family: 'Montserrat', sans-serif;
+  color: #FFF;
+  font-size: 2em;
+  margin-right: 3.5em;
+  float: right;
+  margin-top: -105px;
+}
